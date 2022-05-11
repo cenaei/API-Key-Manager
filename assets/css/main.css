@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #F7F7F7;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+input,
+textarea {
+  background-color: transparent;
+  border-style: none;
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  outline: none;
+}
+
+button {
+  margin-left: 1rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 1.3rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  margin: 1.3rem 0 1.3rem .3rem;
+}
+
+h1 {
+  font-size: 6.4rem;
+  font-weight: 700;
+  font-family: 'Dancing Script', cursive;
+}
+
+h2 {
+  font-size: 3.8rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+p {
+  font-size: 2rem;
+  font-weight: 400;
+  color: White;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-bottom: 2rem;
+}
+
+.header {
+  text-align: center;
+}
+
+.content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 2rem 8rem;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.3rem;
+  padding: 2rem;
+  margin: auto;
+  border-radius: 1.2rem;
+  background-color: #bbcfff;
+}
+
+.form__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 1.2rem;
+  background-color: #fff;
+}
+
+.form__group label {
+  margin: 0.5rem 1rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.form__group input[type=text] {
+  border-radius: 1.2rem;
+  background-color: #8dafff;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.form__group input[type=text]:focus {
+  border-bottom: #e69a00 3px solid;
+}
+
+.form button {
+  background-color: #FFE194;
+}
+
+.form button:hover {
+  background-color: #FFB319;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.table {
+  padding: 3rem;
+  margin: auto;
+  background-color: #dfdfdf;
+  border-radius: 1.2rem;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.table__header {
+  font-size: 1.8rem;
+  font-weight: 400;
+  border-radius: 1.2rem;
+  background-color: #959595;
+}
+
+.table__body {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.table tr:hover {
+  background-color: #FFE194;
+}
+
+.table th {
+  padding: 2rem 5rem;
+  border-bottom: 1.2rem;
+}
+
+.table td {
+  padding: 1.5rem 5rem;
+}
+
+.table .edit {
+  background-color: #ffaa00;
+  color: white;
+}
+
+.table .edit:hover {
+  background-color: #e69a00;
+}
+
+.table .delete {
+  background-color: #fc2a2a;
+  color: white;
+}
+
+.table .delete:hover {
+  background-color: #e12424;
+}
+/*# sourceMappingURL=main.css.map */

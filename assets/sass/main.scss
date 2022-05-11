@@ -1,0 +1,93 @@
+@import "reset";
+
+.header {
+  text-align: center;
+}
+
+.content-wrapper {
+  @include flexBetween(row);
+  @include wrap;
+  padding: 2rem 8rem;
+}
+
+.form {
+  @include flexCenter(column);
+  gap: 1.3rem;
+  padding: 2rem;
+  margin: auto;
+  border-radius: 1.2rem;
+  background-color: #bbcfff;
+  &__group {
+    @include flexBetween(column);
+    border-radius: 1.2rem;
+    background-color: #fff;
+    label {
+      margin: 0.5rem 1rem;
+      @include font(1.4rem, 400);
+      align-self: flex-start;
+    }
+    input[type=text]{
+      border-radius: 1.2rem;
+      background-color: #8dafff;
+      @include font(1.4rem, 400);
+      &:focus {
+        border-bottom: #e69a00 3px solid;
+      }
+    }
+  }
+  button {
+    background-color: #FFE194;
+    &:hover {
+      background-color: #FFB319;
+    }
+  }
+}
+
+.table-container {
+  overflow-x:auto;
+}
+
+.table {
+  padding: 3rem;
+  margin: auto;
+  background-color: #dfdfdf;
+  border-radius: 1.2rem;
+  text-align: center;
+  border-collapse: collapse;
+  &__header {
+    @include font(1.8rem, 400);
+    border-radius: 1.2rem;
+    background-color: #959595;
+  }
+  
+  &__body {
+    @include font(1.4rem, 400);
+    
+  }
+  tr {
+    &:hover {
+      background-color: #FFE194;
+    }
+  }
+  th {
+    padding: 2rem 5rem;
+    border-bottom: 1.2rem;
+  }
+  td {
+    padding: 1.5rem 5rem;
+  }
+  .edit {
+    background-color: #ffaa00;
+    color: white;
+    &:hover {
+      background-color: #e69a00;
+    }
+  }
+  .delete {
+    background-color: #fc2a2a;
+    color: white;
+    &:hover {
+      background-color: #e12424;
+    }
+  }
+}
