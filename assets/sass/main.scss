@@ -16,11 +16,11 @@
   padding: 2rem;
   margin: auto;
   border-radius: 1.2rem;
-  background-color: #bbcfff;
+  background-color: $lightBlue;
   &__group {
     @include flexBetween(column);
     border-radius: 1.2rem;
-    background-color: #fff;
+    background-color: white;
     label {
       margin: 0.5rem 1rem;
       @include font(1.4rem, 400);
@@ -28,17 +28,17 @@
     }
     input[type=text]{
       border-radius: 1.2rem;
-      background-color: #8dafff;
+      background-color: $blue;
       @include font(1.4rem, 400);
       &:focus {
-        border-bottom: #e69a00 3px solid;
+        border-bottom: $orange 3px solid;
       }
     }
   }
   button {
-    background-color: #FFE194;
+    background-color: $lightOrange;
     &:hover {
-      background-color: #FFB319;
+      background-color: $darkOrange;
     }
   }
 }
@@ -50,14 +50,14 @@
 .table {
   padding: 3rem;
   margin: auto;
-  background-color: #dfdfdf;
+  background-color: $lightGray;
   border-radius: 1.2rem;
   text-align: center;
   border-collapse: collapse;
   &__header {
     @include font(1.8rem, 400);
     border-radius: 1.2rem;
-    background-color: #959595;
+    background-color: $gray;
   }
   
   &__body {
@@ -66,7 +66,7 @@
   }
   tr {
     &:hover {
-      background-color: #FFE194;
+      background-color: $lightOrange;
     }
   }
   th {
@@ -77,17 +77,17 @@
     padding: 1.5rem 5rem;
   }
   .edit {
-    background-color: #ffaa00;
+    background-color: $darkerOrange;
     color: white;
     &:hover {
-      background-color: #e69a00;
+      background-color: $orange;
     }
   }
   .delete {
-    background-color: #fc2a2a;
+    background-color: $red;
     color: white;
     &:hover {
-      background-color: #e12424;
+      background-color: $darkerRed;
     }
   }
 }
